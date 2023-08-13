@@ -1,12 +1,48 @@
-import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import React, {useState} from 'react';
+import { Row, Col, Container, Nav, Navbar, Image, Card, Offcanvas,ButtonGroup,Button } from 'react-bootstrap';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import {Badge, Menu,MenuItem} from '@mui/material';
-// import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
-import {usePopupState,bindTrigger,bindMenu,} from 'material-ui-popup-state/hooks'
+import {Badge, Rating} from '@mui/material';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
-    const popupState = usePopupState({ variant: 'popover', popupId: 'demoMenu' })
+    
+    const cartItem = useSelector((state)=> state.allCarts.cart);
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+
+    const AddedCartItem = ()=>{
+      return cartItem.map((el, index)=>{
+          return (
+            <Row key={index} className='d-flex justify-conten-beween my-3' >
+              <Col lg={12}>
+                <Card>
+                  <Card.Body>
+                    <Row className='my-1'>
+                      <Col xs md={4} className='overflow-hidden'><Image src={el.image} rounded  style={{width:140, marginLeft:-30 }} /></Col>
+                      <Col>
+                        <Card.Subtitle style={{minHeight:40}}>{el.title}</Card.Subtitle>
+                        <Row className='my-3'>
+                          <Col><Card.Text> <img src="./img/currency-rupee.svg" alt='' width="15" />{el.price}</Card.Text></Col>
+                          <Col className='d-flex justify-content-end'><Rating className="read-only" value={parseInt(el.rating)} readOnly /></Col>
+                        </Row>
+                        <ButtonGroup aria-label="Add Quintity" size="sm">
+                          <Button variant="primary">-</Button>
+                          <Button variant="light" disabled>{el.quantity}</Button>
+                          <Button variant="primary">+</Button>
+                        </ButtonGroup>
+                      </Col>
+                    </Row>
+                    
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+            
+          )
+        })
+    }
   return (
    <>
     <Navbar bg="info" data-bs-theme="dark">
@@ -17,13 +53,17 @@ const Header = () => {
           </Nav>
           <div className='text-white'>
             <strong>Item Cart </strong>
-            <Badge badgeContent={4} color="success" {...bindTrigger(popupState)}>
+            <Badge style={{cursor: 'pointer'}} badgeContent={cartItem.length} color="success" onClick={handleShow}>
                 <ShoppingCartIcon />
             </Badge>
-            <Menu {...bindMenu(popupState)}>
-                <MenuItem onClick={popupState.close}>Profile Profile Profile Profile</MenuItem>
-                <MenuItem onClick={popupState.close}>My account</MenuItem>
-            </Menu>
+            <Offcanvas show={show} onHide={handleClose} placement="end">
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+              {AddedCartItem()}
+              </Offcanvas.Body>
+            </Offcanvas>
           </div>
         </Container>
       </Navbar>

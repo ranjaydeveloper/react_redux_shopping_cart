@@ -16,27 +16,17 @@ const Footer = () => {
       
       <footer className="text-center text-lg-start bg-light text-muted">
         <section className="d-flex text-white bg-info justify-content-center justify-content-lg-between p-3 border-bottom">
-        <div className="container d-flex bg-info justify-content-center justify-content-lg-between">
-          <div className="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>
-          <div>
-            <Link href="" className="me-4 text-reset">
-              <FacebookIcon />
-            </Link>
-            <Link href="" className="me-4 text-reset">
-              <TwitterIcon />
-            </Link>
-            <Link href="" className="me-4 text-reset">
-              <InstagramIcon />
-            </Link>
-            <Link href="" className="me-4 text-reset">
-              <LinkedInIcon />
-            </Link>
-            <Link href="" className="me-4 text-reset">
-              <GitHubIcon />
-            </Link>
-          </div>
+          <div className="container d-flex bg-info justify-content-center justify-content-lg-between">
+            <div className="me-5 d-none d-lg-block">
+              <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+              <Link href="" className="me-4 text-reset"><FacebookIcon /></Link>
+              <Link href="" className="me-4 text-reset"><TwitterIcon /></Link>
+              <Link href="" className="me-4 text-reset"><InstagramIcon /></Link>
+              <Link href="" className="me-4 text-reset"><LinkedInIcon /></Link>
+              <Link href="" className="me-4 text-reset"><GitHubIcon /></Link>
+            </div>
           </div>
         </section>
         <section className="">
@@ -45,8 +35,7 @@ const Footer = () => {
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4"><DiamondIcon />Ranjay Developer</h6>
                 <p>
-                  Here you can use rows and columns to organize your footer content. Lorem ipsum
-                  dolor sit amet, consectetur adipisicing elit.
+                Senior Software Developer with a demonstrated history of working in the internet industry. Strong professional skilled in Senior frontent (UI) Specialist, Core PHP Web Developer, CMS Sites, Dynamic site, E-Commerce Site, HTML5, CSS3, Jquery, Javascript, Wordpress, Laravel, Facebook Application, React, Vue, Angular..etc
                 </p>
               </div>
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
