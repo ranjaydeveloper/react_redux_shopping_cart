@@ -4,7 +4,7 @@ import thunk from 'redux-thunk';
 
 const store = createStore(RootReducer, {}, compose(
     applyMiddleware(thunk),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   ))
 
   export default store;

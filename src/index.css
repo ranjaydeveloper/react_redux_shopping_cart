@@ -11,3 +11,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.cursor-pointer{ cursor: pointer;}
+.card-body a, .card-body a>div, li a{color: black !important; text-decoration: none !important;}

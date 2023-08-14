@@ -1,10 +1,14 @@
 [
-    { "title":"Apple iPhone 14 (128 GB) - Starlight", "price":"67499", "quantity":0, "rating":"4.5", "image":"https://images-eu.ssl-images-amazon.com/images/I/618Bb+QzCmL._AC_UL600_SR600,400_.jpg"},
-    { "title":"Samsung Galaxy M14 5G (Berry Blue, 6GB, 128GB Storage)", "price":"15499", "quantity":0, "rating":"4.1", "image":"https://images-eu.ssl-images-amazon.com/images/I/91HRACirFrL._AC_UL600_SR600,400_.jpg"},
-    { "title":"Apple iPhone 14 (128 GB) - Blue", "price":"66999", "quantity":0, "rating":"4.5", "image":"https://images-eu.ssl-images-amazon.com/images/I/61bK6PMOC3L._AC_UL600_SR600,400_.jpg"},
-    { "title":"Samsung Galaxy M13 (Midnight Blue, 4GB, 64GB Storage)", "price":"9649", "quantity":0, "rating":"4", "image":"https://images-eu.ssl-images-amazon.com/images/I/812YsUxpyfL._AC_UL600_SR600,400_.jpg"},
-    { "title":"Samsung Galaxy M14 5G (Smoky Teal, 6GB, 128GB Storage)", "price":"15490", "quantity":0, "rating":"4.5", "image":"https://images-eu.ssl-images-amazon.com/images/I/91zMokvCNuL._AC_UL600_SR600,400_.jpg"},
-    { "title":"Samsung Galaxy M14 5G (Berry Blue, 6GB, 128GB Storage)", "price":"15499", "quantity":0, "rating":"4.1", "image":"https://images-eu.ssl-images-amazon.com/images/I/619f09kK7tL._AC_UL600_SR600,400_.jpg"},
-    { "title":"Apple iPhone 14 (128 GB) - Blue", "price":"66999", "quantity":0, "rating":"4.5", "image":"https://images-eu.ssl-images-amazon.com/images/I/61bK6PMOC3L._AC_UL600_SR600,400_.jpg"},
-    { "title":"Samsung Galaxy M13 (Midnight Blue, 4GB, 64GB Storage)", "price":"9649", "quantity":0, "rating":"4", "image":"https://images-eu.ssl-images-amazon.com/images/I/812YsUxpyfL._AC_UL600_SR600,400_.jpg"}
+    { "id":"1", "title":"Apple iPhone 14 (128 GB) - Starlight", "price":"67499", "quantity":0, "rating":"4.5", "image":"https://pivotsroot.com/mobile/thumb1.jpg"},
+    { "id":"2", "title":"Samsung Galaxy M14 5G (Berry Blue, 6GB, 128GB Storage)", "price":"15499", "quantity":0, "rating":"4.1", "image":"https://pivotsroot.com/mobile/thumb2.jpg"},
+    { "id":"3", "title":"Apple iPhone 14 (128 GB) - Blue", "price":"66999", "quantity":0, "rating":"4.5", "image":"https://pivotsroot.com/mobile/thumb3.jpg"},
+    { "id":"4", "title":"Samsung Galaxy M13 (Midnight Blue, 4GB, 64GB Storage)", "price":"9649", "quantity":0, "rating":"4", "image":"https://pivotsroot.com/mobile/thumb4.jpg"},
+    { "id":"5", "title":"Samsung Galaxy M14 5G (Smoky Teal, 6GB, 128GB Storage)", "price":"15490", "quantity":0, "rating":"4.5", "image":"https://pivotsroot.com/mobile/thumb5.jpg"},
+    { "id":"6", "title":"Samsung Galaxy M14 5G (Berry Blue, 6GB, 128GB Storage)", "price":"15499", "quantity":0, "rating":"4.1", "image":"https://pivotsroot.com/mobile/thumb6.jpg"},
+    { "id":"7", "title":"Apple iPhone 14 (128 GB) - Blue", "price":"66999", "quantity":0, "rating":"4.5", "image":"https://pivotsroot.com/mobile/thumb5.jpg"},
+    { "id":"8", "title":"Samsung Galaxy M13 (Midnight Blue, 4GB, 64GB Storage)", "price":"9649", "quantity":0, "rating":"4", "image":"https://pivotsroot.com/mobile/thumb1.jpg"},
+    { "id":"9", "title":"Apple iPhone 14 (128 GB) - Starlight", "price":"67499", "quantity":0, "rating":"4.5", "image":"https://pivotsroot.com/mobile/thumb1.jpg"},
+    { "id":"10", "title":"Samsung Galaxy M14 5G (Berry Blue, 6GB, 128GB Storage)", "price":"15499", "quantity":0, "rating":"4.1", "image":"https://pivotsroot.com/mobile/thumb2.jpg"},
+    { "id":"11", "title":"Apple iPhone 14 (128 GB) - Blue", "price":"66999", "quantity":0, "rating":"4.5", "image":"https://pivotsroot.com/mobile/thumb3.jpg"},
+    { "id":"12", "title":"Samsung Galaxy M13 (Midnight Blue, 4GB, 64GB Storage)", "price":"9649", "quantity":0, "rating":"4", "image":"https://pivotsroot.com/mobile/thumb4.jpg"}
 ]

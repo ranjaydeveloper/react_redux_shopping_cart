@@ -1,6 +1,8 @@
 const ActionType = {
 	ADD_CART: "ADD_CART",
 	REMOVE_CART: "REMOVE_CART",
+	ADD_QUINTITY: "ADD_CART",
+	DECREMENT_QUINTITY: "DECREMENT_QUINTITY",	
 }
 
 export default ActionType;
